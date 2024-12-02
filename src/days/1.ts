@@ -1,4 +1,5 @@
 import { Day, IDay, Solution } from '../types/Day';
+import { ascendingSort } from '../util';
 
 export default class Day1 extends Day implements IDay {
     constructor(skip: boolean = false) {
@@ -37,8 +38,8 @@ export default class Day1 extends Day implements IDay {
 
     partOne(): Solution {
         const { left, right } = this.separateLeftAndRight(this.input);
-        const sortedLeft = left.sort((a, b) => a - b);
-        const sortedRight = right.sort((a, b) => a - b);
+        const sortedLeft = left.sort(ascendingSort);
+        const sortedRight = right.sort(ascendingSort);
 
         let solution = 0;
         for (let i = 0; i < sortedLeft.length; i++) {
