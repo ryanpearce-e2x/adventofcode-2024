@@ -1,4 +1,4 @@
-import { Day1 } from './days';
+import { Day1, Day2 } from './days';
 import { IDay } from './types/Day';
 
 const measureExecutionTime = (callback: () => void): number => {
@@ -9,7 +9,7 @@ const measureExecutionTime = (callback: () => void): number => {
     return elapsedTime;
 };
 
-const currentDays = [new Day1()];
+const currentDays = [new Day1(), new Day2()];
 
 const runDay = (day: IDay, dayNumber: number) => {
     console.log(`-----Day ${dayNumber}-----`);
