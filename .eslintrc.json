@@ -12,7 +12,6 @@
     "plugins": ["@typescript-eslint", "prettier"],
     "rules": {
         "linebreak-style": ["error", "unix"],
-        "quotes": ["error", "single"],
         "prettier/prettier": ["error"]
     }
 }
