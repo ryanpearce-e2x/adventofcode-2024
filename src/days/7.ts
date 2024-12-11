@@ -24,7 +24,7 @@ export default class Day7 extends Day implements IDay {
         for (const line of lines) {
             const [testValueStr, numbersStr] = line.split(':').map((s) => s.trim());
             const testValue = parseInt(testValueStr, 10);
-            const numbers = numbersStr.split(' ').map((s) => parseInt(s, 10));
+            const numbers = numbersStr.split(' ').map(Number);
             const operatorCount = numbers.length - 1;
 
             if (operatorCount === 0) {

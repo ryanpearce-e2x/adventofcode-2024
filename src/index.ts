@@ -1,4 +1,4 @@
-import { Day1, Day2, Day3, Day4, Day5, Day6, Day7 } from './days';
+import { Day1, Day2, Day3, Day4, Day5, Day6, Day7, Day8, Day9, Day10, Day11 } from './days';
 import { IDay } from './types/Day';
 
 const measureExecutionTime = (callback: () => void): number => {
@@ -9,7 +9,19 @@ const measureExecutionTime = (callback: () => void): number => {
     return elapsedTime;
 };
 
-const currentDays = [new Day1(), new Day2(), new Day3(), new Day4(), new Day5(), new Day6(), new Day7()];
+const currentDays = [
+    new Day1(),
+    new Day2(),
+    new Day3(),
+    new Day4(),
+    new Day5(),
+    new Day6(),
+    new Day7(),
+    new Day8(),
+    new Day9(),
+    new Day10(),
+    new Day11(),
+];
 
 const runDay = (day: IDay, dayNumber: number) => {
     console.log(`-----Day ${dayNumber}-----`);

@@ -4,3 +4,7 @@ export const range = (start: number, end: number): number[] => {
 
 export const ascendingSort = (a: number, b: number): number => a - b;
 export const descendingSort = (a: number, b: number): number => a + b;
+
+export const gcd = (a: number, b: number): number => {
+    return b === 0 ? Math.abs(a) : gcd(b, a % b);
+};
